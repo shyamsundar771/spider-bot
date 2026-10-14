@@ -318,9 +318,12 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    # Allow the frontend from localhost AND from any private LAN IP
-    # (so it works both on the laptop and on a phone on the same Wi-Fi).
-    allow_origin_regex=r"http://(localhost|127\.0\.0\.1|10\.\d+\.\d+\.\d+|172\.(1[6-9]|2\d|3[01])\.\d+\.\d+|192\.168\.\d+\.\d+):\d+",
+    allow_origins=[
+        "https://spider-bot-nine.vercel.app",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://192.168.2.97:5173",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
