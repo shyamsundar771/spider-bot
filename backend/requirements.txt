@@ -8,3 +8,4 @@ python-docx
 python-jose[cryptography]
 bcrypt
 pydantic
+python-multipart
