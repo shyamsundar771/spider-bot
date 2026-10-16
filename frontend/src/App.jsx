@@ -6,7 +6,8 @@ import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import LoginPage from "./LoginPage";
 import "./App.css";
 
-const API_URL = "http://192.168.2.97:8000";
+
+const API_URL = import.meta.env.VITE_API_URL || "http://192.168.2.97:8000";
 const CONVERSATION_KEY = "spider_bot_conversation_id";
 const TOKEN_KEY = "spider_bot_token";
 const USER_KEY = "spider_bot_user";
