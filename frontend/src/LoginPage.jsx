@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./LoginPage.css";
 
-const API_URL = "http://192.168.2.97:8000";
+const API_URL = "https://spider-bot-arzw.onrender.com";
 
 // Landscape background (desktop / tablet)
 const SPIDERMAN_IMAGE = "/spiderman.png";
